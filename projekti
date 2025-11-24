@@ -1,0 +1,54 @@
+import random
+
+# Esimerkkidataa (voit lisätä enemmän myöhemmin)
+pääkaupungit = {
+    "Suomi": "Helsinki",
+    "Ranska": "Pariisi",
+    "Saksa": "Berliini",
+    "Italia": "Rooma",
+    "Japani": "Tokio",
+    "Kiina": "Peking",
+    "Espanja": "Madrid",
+    "Ruotsi": "Tukholma",
+    "Norja": "Oslo", 
+    "Tanska": "Kööpenhamina",
+    "Venäjä": "Moskova",
+    "Iso-Britannia": "Lontoo",
+    "Yhdysvallat": "Washington D.C.",
+    "Kanada": "Ottawa",
+    "Australia": "Canberra",
+    "Belgia": "Bryssel",
+}
+
+# Luo lista maista sekoittamista varten
+maat = list(pääkaupungit.keys())
+random.shuffle(maat) # Sekoita kysymysjärjestys
+
+# Kysymyssilmukka
+pisteet = 0
+kysymysten_lkm = 5 # Asetetaan esimerkiksi 5 kysymystä
+
+print("Tervetuloa pääkaupunkivisailuun!")
+
+# Varmistetaan, ettei yritetä kysyä enempää kuin maita on saatavilla
+kysymyksia = min(kysymysten_lkm, len(maat))
+
+for i in range(kysymyksia):
+    maa = maat[i]  # Valitaan maa sekoitetusta listasta
+    oikea_vastaus = pääkaupungit[maa]  # Haetaan oikea vastaus sanakirjasta
+
+    # Kysymys
+    vastaus = input(f"\n{i+1}. Mikä on maan {maa} pääkaupunki? ").strip().lower()
+
+    # Tarkistus
+    if vastaus == oikea_vastaus.lower():
+        print("Oikein!")
+        pisteet += 1
+    else:
+        print(f"Väärin. Oikea vastaus on {oikea_vastaus}.")
+
+# Tulosten näyttäminen
+print("\n--- VISAN LOPPU ---")
+print(f"Sait {pisteet} / {kysymyksia} oikein.")
+print("Kiitos pelaamisesta!")
+
