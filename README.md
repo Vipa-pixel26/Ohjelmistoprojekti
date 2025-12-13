@@ -10,16 +10,9 @@ Ohjelma on toteutettu käyttäen kolmea keskeistä rakennetta:
 3. Kysymykset: Ohjelma käyttää for-silmukkaa käydessään läpi sekoitettua listaa, jotta jokainen maa käsitellään vain kerran. Silmukan sisällä input()-funktiota käytetään keräämään vastaus ja if/else-lauseilla tarkastetaan, onko vastaus sama, kuin sanakirjasta haettu oikea arvo. .lower() varmistaa, että pelaaja saa pisteen, vaikka vastaus olisi kirjoitettu isoilla kirjaimilla.
    
 #KÄYNNISTYSOHJE
-Ohjelman suorittamiseen tarvitset tietokoneen, johon on asennettu **Python 3**.
-1.  Kloonaa tämä repositorio paikallisesti koneellesi:
-    ```bash
-    git clone github.com
-    ```
-2.  Siirry projektikansioon:
-    ```bash
-    cd paakaupunkivisa
-    ```
-3.  Käynnistä ohjelma Python-tulkilla:
-    ```bash
-    python paakaupunkivisa.py
-    ```
+Ohjelman suorittamiseen tarvitset tietokoneen, johon on asennettu Python 3.
+
+Kopioi tämä linkki 'https://github.com/Vipa-pixel26/Ohjelmistoprojekti.git' ja kloonaa se Visual Studio Coden Welcome sivun Clone Git Repository... kohtaan ja aja ohjelma.
+
+
+
