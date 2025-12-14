@@ -14,5 +14,8 @@ Ohjelman suorittamiseen tarvitset tietokoneen, johon on asennettu Python 3.
 
 Kopioi tämä linkki 'https://github.com/Vipa-pixel26/Ohjelmistoprojekti.git' ja kloonaa se Visual Studio Coden Welcome sivun Clone Git Repository... kohtaan ja aja ohjelma.
 
+Videotallenne ohjelman esittelystä: https://youtu.be/NnOsx999sX0
+
+
 
 
